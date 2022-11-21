@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../imed-2351-001/Imed-2351-001-class"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Imed-2351-001-class"
+	}
+}
