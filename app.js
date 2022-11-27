@@ -202,9 +202,142 @@ chocolate.addEventListener('click', function onClick() {
   }); //                               LOOPS
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+  const age = 21;
 
+  if (age >21){
+  console.log("you are old enough to drink!");
+  } else {
+      console.log("you shouldn't be drinking");
+  }
+  
+  var dice1 = 9;
+  var dice2 = 5;
+  
+  if (dice1 === 9 && dice2 ===5){
+      console.log("you got this!");
+  } else {
+      console.log("not today");
+  }
+  
+  
+  let myAge = 100;
+  console.log("I am " + myAge + " years old.");
+  
+  let example1a = "abcdefg";
+  let example1b = example1a.indexOf("abc");     
+  let example1c = example1a.lastIndexOf("efg");  ////////////////        NUMBERS
 
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   
+  const name = "Dev Ed";  
+
+
+
+
+  function logger() {
+      console.log("neverParty Time");
+      console.log("neverParty Time");
+      console.log("neverParty Time");
+      console.log("neverParty Time");
+  
+      }
+  
+      logger();
+  
+  
+      function adder(num1, num2, num3) {
+          console.log(num1+num2+num3);
+  
+  
+      }
+  
+  adder(5,10,10);
+  
+  
+  const youtuber = "Traversy Media";
+  
+  function toUpper(text) {
+      const upperCased = text.toUpperCase();
+      console.log(upperCased);
+  }
+  
+  toUpper(name);
+  toUpper(youtuber);
+  
+  let carNames;
+  
+  function carNames =(firstname){
+  alert(firstname + "niceCars");
+  
+  }
+  
+  firstname("chevy");
+  firstname("toyota");
+  firstname("camry");
+  
+  carNames();
+  console.log;
+  
+  
+  var score=0;
+  console.log(score);
+  score= 5;
+  console.log(score);
+  var score=10; 
+  console.log(score);
+  
+  let scores =5;
+  console.log(scores);
+  
+  
+  function addpoints (num){
+  score =score +num
+  
+  }
+  addpoints(5);
+  console.log///////////////////////////////////////////////////////          functions and parameters
+  //////////////////////////////////////////////////////////////////////////////////
+
+
+  var life = 100;// this is my life bar number
+
+life = life - 10;
+
+life = life - 10;
+
+ 
+
+
+var name = "Dev Ed"; // this is the name displayed in the game string 
+
+var x = 2; // global variable
+
+
+let a = 5; // math problem variable
+let y = 2;
+let z = a + y;
+
+
+const F = 9; // variable using const 
+
+
+
+
+
+
+
+
+console.log(`${life} ${x} ${a} ${y} ${z} ${F}`); ///  variables
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log(' hello is this right?') ;            ///////////            test
+  
+  
+  
+
+
 
 
