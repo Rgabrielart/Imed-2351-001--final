@@ -267,7 +267,7 @@ chocolate.addEventListener('click', function onClick() {
   
   let carNames;
   
-  function carNames =(firstname){
+  function carNames = (firstname){
   alert(firstname + "niceCars");
   
   }
