@@ -102,7 +102,12 @@
     transform: scale(2);
   }
 
-
+  .name-list {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+  }
+  
 Footer
 © 2022 GitHub, Inc.
 Footer navigation
