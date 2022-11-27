@@ -230,7 +230,7 @@ chocolate.addEventListener('click', function onClick() {
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   
-  const name = "Dev Ed";  
+    
 
 
 
@@ -267,7 +267,7 @@ chocolate.addEventListener('click', function onClick() {
   
   let carNames;
   
-  function carNames = (firstname){
+  function carNames  (firstname){
   alert(firstname + "niceCars");
   
   }
