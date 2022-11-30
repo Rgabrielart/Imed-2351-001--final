@@ -393,12 +393,11 @@ game(); ///               rock paper scissors game
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let button = document.getElementById('button1')
-let paragraph = document.getElementsByClassName('information')[0]
-button.onclick = ()=> {
-  paragraph.textContent='Button has been pressed'
-}
+
 //////////////////////////////////////// AJAX text
+
+
+
 
 
 
