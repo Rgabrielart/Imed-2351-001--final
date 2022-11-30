@@ -117,17 +117,14 @@ while (count < 5) {
   i++;
 }
 
-const text = document.querySelector("title"); // practice from video
-const changeColor = document.querySelector("changeColor");
-text.style.backgroundColor = "red";
-
-const btn = document.querySelector("#btn"); // loop with color
-btn.addEventListener ("click", () => {
-  const h1 = document.querySelector("h1");
-  const colors = ["red", "yellow", "brown", "green", "blue"];
-  for (let i = 0; i < colors.length; i++) {
-    h1.style.color = colors[i];
-  }
+const btn = document.querySelector('#btn');
+const h1 = document.querySelector('h1');
+const colors = ['red', 'yellow', 'brown', 'green', 'blue'];
+let i = 0;
+btn.addEventListener('click', () => {
+  h1.style.color = colors[i]; // to change the color
+  h1.innerHTML = colors[i]; // to change the text
+  i = (i + 1) % colors.length;
 });
 
 const userlist = document.querySelectorAll("name-list li"); //user  list color
@@ -138,7 +135,7 @@ function myFunction(selectTag) {
 }
 
 console.log;
-const namelist = (bruce , diana ,clark);
+const namelist = ( 'bruce, diana ,clark');
 const list = document.querySelector("name-list li");
 const listItems = document.querySelector("name-list");
 
@@ -394,10 +391,17 @@ game(); ///               rock paper scissors game
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-//////////////////////////////////////// AJAX text
+
+///////////////////////////////////////////////
 
 
+const newBackgroundColor = document.querySelector('.box-3');
 
+function changeBgColor() {
+  newBackgroundColor.style.backgroundColor = 'blue';
 
+};
+
+newBackgroundColor.addEventListener("mouseover",changeBgColor);
 
 
