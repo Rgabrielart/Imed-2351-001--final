@@ -93,7 +93,7 @@ let person = {
 const persons = {
   // object
 
-  name: "Gabe",
+  name: "store owner",
   age: 40,
 };
 console.log(persons); //                     object and array
@@ -138,7 +138,7 @@ function myFunction(selectTag) {
 }
 
 console.log;
-
+const namelist = (bruce , diana ,clark);
 const list = document.querySelector("name-list li");
 const listItems = document.querySelector("name-list");
 
