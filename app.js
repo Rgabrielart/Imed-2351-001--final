@@ -120,7 +120,7 @@ while (count < 5) {
 const btn = document.querySelector('#btn');
 const h1 = document.querySelector('h1');
 const colors = ['red', 'yellow', 'brown', 'green', 'blue'];
-let i = 0;
+let  = 0;
 btn.addEventListener('click', () => {
   h1.style.color = colors[i]; // to change the color
   h1.innerHTML = colors[i]; // to change the text
