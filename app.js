@@ -139,7 +139,7 @@ const namelist = ( 'bruce, diana ,clark');
 const list = document.querySelector("name-list li");
 const listItems = document.querySelector("name-list");
 
-namelist.addeventListener("click", function () {
+namelist.addEventListener("click", function () {
   const newli = document.createElement("button");
   const buttoncontent = document.createTextNode(listinput.value);
   newbutton.appendChild(licontent);
@@ -295,16 +295,16 @@ const game = () => {
     const computerHand = document.querySelector(".computer-hand");
     const hands = document.querySelectorAll(".hands img");
 
-    hands.forEach((hand) => {
-      hand.addEventListener("animationend", function () {
+    hands.forEach(hand => {
+      hand.addEventListener("animationend", function() {
         this.style.animation = "";
       });
     });
     //Computer Options
     const computerOptions = ["rock", "paper", "scissors"];
 
-    options.forEach((option) => {
-      option.addEventListener("click", function () {
+    options.forEach(option => {
+      option.addEventListener("click", function() {
         //Computer Choice
         const computerNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[computerNumber];
@@ -382,9 +382,11 @@ const game = () => {
     }
   };
 
+ 
   startGame();
   playMatch();
 };
+
 
 game(); ///               rock paper scissors game
 
@@ -395,13 +397,6 @@ game(); ///               rock paper scissors game
 ///////////////////////////////////////////////
 
 
-const newBackgroundColor = document.querySelector('.box-3');
 
-function changeBgColor() {
-  newBackgroundColor.style.backgroundColor = 'blue';
-
-};
-
-newBackgroundColor.addEventListener("mouseover",changeBgColor);
 
 
