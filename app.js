@@ -397,6 +397,78 @@ game(); ///               rock paper scissors game
 ///////////////////////////////////////////////
 
 
+$(document).ready(function() {
 
+  var userChoice = "";
+  var computerChoice = "";
+  //generate computer choice
+  function getCompChoice() {
+  computerChoice = Math.random();
+  if (computerChoice < 0.34) {
+    computerChoice = "rock";
+    $('.usermsg-comp').hide().html("computer chose " + computerChoice).fadeIn(1200);
+    $('.compdiv .rockpic').addClass('chosen').siblings().removeClass('chosen');
+  } else if(computerChoice <= 0.67) {
+    computerChoice = "paper";
+    $('.usermsg-comp').hide().html("computer chose " + computerChoice).fadeIn(1200);
+    $('.compdiv .paperpic').addClass('chosen').siblings().removeClass('chosen');
+  } else {
+    computerChoice = "scissors";
+    $('.usermsg-comp').hide().html("computer chose " + computerChoice).fadeIn(1200);
+    $('.compdiv .scispic').addClass('chosen').siblings().removeClass('chosen');
+  }
+  }
+  console.log(computerChoice);
+  //comparison function
+  var compare = function(userChoice, computerChoice) {
+      if(userChoice === computerChoice) {
+          $('.usermsg-result').hide().html("it's a tie").fadeIn(1600);
+      } else if  (userChoice === "rock") {
+          if(computerChoice==="scissors") {
+              $('.usermsg-result').hide().html("rock wins").fadeIn(1600);
+          } else {
+              $('.usermsg-result').hide().html("paper wins").fadeIn(1600);
+          }
+      } else if (userChoice==="paper") {
+          if(computerChoice==="rock") {
+              $('.usermsg-result').hide().html("paper wins").fadeIn(1600);
+          } else {
+              $('.usermsg-result').hide().html("scissors wins").fadeIn(1600);
+          }
+      } else if (userChoice==="scissors") {
+          if(computerChoice==="rock") {
+              $('.usermsg-result').hide().html("rock wins").fadeIn(1600);
+          } else {
+              if(computerChoice==="paper") {
+                  $('.usermsg-result').hide().html("scissors wins").fadeIn(1600);
+              }
+          }
+      }
+  };
+    
+  //generate user choice and style
+   
+  $('.playerdiv .rockpic').click(function() {
+      userChoice = "rock";
+      $(this).addClass('chosen').siblings().removeClass('chosen');
+      $('.usermsg-player').hide().html("you have chosen rock").fadeIn(400);
+      getCompChoice();
+      compare(userChoice, computerChoice);
+   }); 
+  $('.playerdiv .paperpic').click(function() {
+      userChoice = "paper";
+      $(this).addClass('chosen').siblings().removeClass('chosen');
+      $('.usermsg-player').hide().html("you have chosen paper").fadeIn(400);
+      getCompChoice();
+      compare(userChoice, computerChoice);
+  });  
+  $('.playerdiv .scispic').click(function() {
+      userChoice = "scissors";
+      $(this).addClass('chosen').siblings().removeClass('chosen');
+      $('.usermsg-player').hide().html("you have chosen scissors").fadeIn(400);
+      getCompChoice();
+      compare(userChoice, computerChoice);
+  });
+  });
 
 
