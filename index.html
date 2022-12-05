@@ -1,178 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>My Sketchy Comic Shop </title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="style.css" />
-<style>
-
-
-
-#demoFont {
-font-family: "Arial Black", Gadget, sans-serif;
-font-size: 28px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #000000;
-font-weight: 400;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: italic;
-font-variant: normal;
-text-transform: none;
-}
-
-
-#demotext {
-text-shadow: 9px 6px 5px #CECB19;
-}
-#borderDemo {
-border: 5px dotted #1C6EA4;
-}
-
-.bolded { font-weight: bold; }
-
-body {
-background-color: #CCFFFF;
-}
-footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
-}
-
-ul#navlist li{
-display: inline;
-}
-ul#navlist a{
-margin-right: 20px;
-}
-
-.parent {
-display: grid;
-grid-template-columns: repeat(10, 1fr);
-grid-template-rows: repeat(7, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-}
-
-.div1 { grid-area: 1 / 1 / 2 / 11; }
-.div2 { grid-area: 2 / 1 / 8 / 4; }
-.div3 { grid-area: 2 / 4 / 4 / 6; }
-.div4 { grid-area: 2 / 6 / 7 / 9; }
-.div5 { grid-area: 2 / 9 / 7 / 11; }
-.div6 { grid-area: 7 / 4 / 8 / 11; }
-.div7 { grid-area: 4 / 4 / 7 / 6; }
-.emphasis {color: blue;
-background-color: yellow;}
-h2{border-bottom:1px solid black;font-family: arial;}
-</style>
-
+  <title>My Sketchy Comic Shop </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css?v=1" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <script>
-		function getWelcome(){
-			var ajaxRequest = new XMLHttpRequest();
-			ajaxRequest.onreadystatechange = function(){
-			
-				if(ajaxRequest.readyState == 4){
-					//the request is completed, now check its status
-					if(ajaxRequest.status == 200){
-						document.getElementById("welcome").innerHTML = ajaxRequest.responseText;
-					}
-					else{
-						console.log("Status error: " + ajaxRequest.status);
-					}
-				}
-				else{
-					console.log("Ignored readyState: " + ajaxRequest.readyState);
-				}
-			
-			
-			}
-			ajaxRequest.open('GET', 'https://happycoding.io/tutorials/javascript/example-ajax-files/text-welcome.txt');
-			ajaxRequest.send();
-		}
-	
-	</script>	
-</head>
-<body>
-	<p onclick="getWelcome()">Click here to see the welcome message.</p>
-	<p id="welcome"></p>
-  
+  <p onclick="getWelcome()">Click here to see the welcome message.</p>
+  <p id="welcome"></p>
 
 
-<table style="background-color:#CCFFFF">
-<div id="demo">Welcome!🤖</div>
-<h1><div id="demotext">My Sketchy Comic Shop</div></h1>
-<h2 class="emphasis"> Bill Wilkson Rare and Vintage Collectible's </h2> 
- <h3 style="text-align:Right">Please Inquire about rare books through email.</h3>
-<div class="parent">
-<div class="div1"> <ul id="navlist"><div id="demoFont">
-<li><a href=" ">Welcome</a></li>
-<li><a href="file:C:/Users/rgabr/Desktop/Final/Index.html" target="_Index" rel="external" hreflang="en" type="text/html"> Index </a></li>
-<li><a href="file:C:/Users/rgabr/Desktop/Final/History.html" target="_History" rel="external" hreflang="en" type="text/html"> History </a></li>
-<li><a href="file:C:/Users/rgabr/Desktop/Final/Products.html" target="_products" rel="external" hreflang="en" type="text/html"> Products </a></li>
-<li><a href="file:C:/Users/rgabr/Desktop/Final/contact%20us.html" target="_Contact Us" rel="external" hreflang="en" type="text/html"> Contact Us </a></li>
-</div></ul> </div>
+
+  <div id="demo">Welcome!🤖</div>
+  <h1>
+    <div id="demotext">My Sketchy Comic Shop</div>
+  </h1>
+  <h2 class="emphasis"> Bill Wilkson Rare and Vintage Collectible's </h2>
+  <h3 style="text-align:Right">Please Inquire about rare books through email.</h3>
+  <div class="parent">
+    <div class="div1">
+      <ul id="navlist">
+        <div id="demoFont">
+          <li><a href=" ">Welcome</a></li>
+          <li><a href="file:C:/Users/rgabr/Desktop/Final/Index.html" target="_Index" rel="external" hreflang="en"
+              type="text/html"> Index </a></li>
+          <li><a href="file:C:/Users/rgabr/Desktop/Final/History.html" target="_History" rel="external" hreflang="en"
+              type="text/html"> History </a></li>
+          <li><a href="file:C:/Users/rgabr/Desktop/Final/Products.html" target="_products" rel="external" hreflang="en"
+              type="text/html"> Products </a></li>
+          <li><a href="file:C:/Users/rgabr/Desktop/Final/contact%20us.html" target="_Contact Us" rel="external"
+              hreflang="en" type="text/html"> Contact Us </a></li>
+        </div>
+      </ul>
+    </div>
 
 
 
 
 
 
-<div class="div2"><img src="ghost riders.jpg" alt="ghost" width="90%" height="auto" /> <img src="crime.jpg" alt="ghost" width="90%" height="auto" /></div>
-<div class="div3"> <form action=" " method="post">
-<p><span class="bolded">Choose your favorite Comic:</span></p>
-<p>
-<select name="Comics">
-<option value="Comics">Ghost Rider # 72 1989</option>
-<option value="Comics">Ghost Rider #37 1988</option>
-<option value="Comics">X-men #1 1992</option>
-<option value="Comics">X-men #67 1995</option>
-<option value="Comics">Spiderman #43 1996</option>
-<option value="Comics">Spiderman #44 1996</option>
-<option value="Comics">Spiderman #45 1996</option>
-<option value="Comics">Spiderman #46 1996</option>
-<option value="Comics">Spiderman #47 1996</option>
-<option value="Comics">Spiderman #48 1996</option>
+    <div class="div2"><img src="ghost riders.jpg" alt="ghost" width="90%" height="auto" />
+      <img src="crime.jpg" alt="ghost" width="90%" height="auto" />
+    </div>
+    <div class="div3">
+      <form action=" " method="post">
+        <p><span class="bolded">Choose your favorite Comic:</span></p>
+        <p>
+          <select name="Comics">
+            <option value="Comics">Ghost Rider # 72 1989</option>
+            <option value="Comics">Ghost Rider #37 1988</option>
+            <option value="Comics">X-men #1 1992</option>
+            <option value="Comics">X-men #67 1995</option>
+            <option value="Comics">Spiderman #43 1996</option>
+            <option value="Comics">Spiderman #44 1996</option>
+            <option value="Comics">Spiderman #45 1996</option>
+            <option value="Comics">Spiderman #46 1996</option>
+            <option value="Comics">Spiderman #47 1996</option>
+            <option value="Comics">Spiderman #48 1996</option>
 
-</select>
-</p>
+          </select>
+        </p>
+      </form>
+    </div>
+    <div class="div4"><img src="xmen.jpg" alt="xmen" width="90%" height="auto" />
+      <img src="captain.jpg" alt="captain" width="90%" height="auto" />
+    </div>
+    <div class="div5">
+      <p><span class="bolded">Comics </span> fans and historians split the history of comics into "ages", which are
+        sequential periods of time that each have a shared feel reflective of the general trends in comics during
+        the years that the "age" spans.
+        At ComicSpectrum we will also call out some key sub-divisions within ages (and sometimes spanning multiple
+        ages). Each has its own unique characteristics that are worth calling out and are worth examining and
+        understanding.</p>
+      <p>Ultimately, it's useful to break up and understand the common sub-divisions in the history of comics for
+        collecting purposes. Many people like to specialize on collecting from one or multiple ages, or even
+        concentrating on collecting within some of the specialized sub-divisions, like EC or Underground comics .
+      </p>
+      <p> The Platinum Age applies to all comics that came out before the 1st appearance of Superman in 1938 and is
+        a very specialized area of comics collecting. The number of people collecting these comics is very small and
+        less is known about them than comics from the Golden Age forward, but they undeniably laid the foundation
+        that modern comics were built upon. Popular character from the pre-super-hero days include R.F. Outcault's
+        The Yellow Kid, George McManus' Bringing Up Father (with Jiggs & Maggie), and Walt Disney's Mickey Mouse.
+      </p>
+      <p>The Golden Age of comics is considered by most fans and comics scholars to have started with the first
+        appearance of Superman in Action Comics #1 (June 1938) and ran through 1956. Action Comics #1 changed the
+        landscape of comic book from that point all they way to today. Batman soon followed, debuting in Detective
+        Comics #27 (May 1939) and then a host of other super-heroes who would ultimately form a team, The Justice
+        Society of America, in All-Star Comics #3 (Winter 1940). Super-Heroes became very popular and soon dominated
+        the majority of the titles that were being produced. DC Comics (known as National in the Golden Age) is
+        often thought of first when people think of the Golden Age because of iconic characters like Batman and
+        Superman. </p>
+      <p> Timely Comics (that would eventually go on to become Atlas and finally Marvel Comics) burst onto the scene
+        not long after the debut of Superman and Batman, offering up Marvel Comics #1 in October 1939, debuting the
+        iconic characters of the Human Torch and the Sub-Mariner. Captain America joined them in March 1941 and the
+        Golden Age had another strong stable of super-heroes for the young fans to buy. </p>
+      <p>The third major contender in the Golden Age super-hero market was Fawcett Comics. Their most iconic
+        super-hero was Captain Marvel, debuting in WHIZ Comics #2 (Feb 1940). Fawcett created a number of other
+        heroes over the years, but none had the endurance of Captain Marvel and the "Marvel Family". Their
+        adventures dominated the comics at Fawcett, they would guest star in a number of other comics and even
+        introduce new characters to the Fawcett fans. There were certainly other publishers during the Golden Age,
+        dozens, but the 3 spotlighted here created the most enduring super-hero characters.
+      </p>
 
-</form></div>
-<div class="div4"><img src="xmen.jpg" alt="xmen" width="90%" height="auto" /> <img src="captain.jpg" alt="captain" width="90%" height="auto" /> </div>
-<div class="div5"> <p><span class="bolded">Comics </span> fans and historians split the history of comics into "ages", which are sequential periods of time that each have a shared feel reflective of the general trends in comics during the years that the "age" spans.
-At ComicSpectrum we will also call out some key sub-divisions within ages (and sometimes spanning multiple ages).  Each has its own unique characteristics that are worth calling out and are worth examining and understanding.</p>
-<p>Ultimately, it's useful to break up and understand the common sub-divisions in the history of comics for collecting purposes.  Many people like to specialize on collecting from one or multiple ages, or even concentrating on collecting within some of the specialized sub-divisions, like EC or Underground comics . </p>
-<p> The Platinum Age applies to all comics that came out before the 1st appearance of Superman in 1938 and is a very specialized area of comics collecting.  The number of people collecting these comics is very small and less is known about them than comics from the Golden Age forward, but they undeniably laid the foundation that modern comics were built upon.  Popular character from the pre-super-hero days include R.F. Outcault's The Yellow Kid, George McManus' Bringing Up Father (with Jiggs & Maggie), and Walt Disney's Mickey Mouse.  </p>
-<p>The Golden Age of comics is considered by most fans and comics scholars to have started with the first appearance of Superman in Action Comics #1 (June 1938) and ran through 1956.  Action Comics #1 changed the landscape of comic book from that point all they way to today.  Batman soon followed, debuting in Detective Comics #27 (May 1939) and then a host of other super-heroes who would ultimately form a team, The Justice Society of America, in All-Star Comics #3 (Winter 1940).   Super-Heroes became very popular and soon dominated the majority of the titles that were being produced.   DC Comics (known as National in the Golden Age) is often thought of first when people think of the Golden Age because of iconic characters like Batman and Superman.  </p>
-<p> Timely Comics (that would eventually go on to become Atlas and finally Marvel Comics) burst onto the scene not long after the debut of Superman and Batman, offering up Marvel Comics #1 in October 1939, debuting the iconic characters of the Human Torch and the Sub-Mariner.  Captain America joined them in March 1941 and the Golden Age had another strong stable of super-heroes for the young fans to buy.   </p>
-<p>The third major contender in the Golden Age super-hero market was Fawcett Comics.  Their most iconic super-hero was Captain Marvel, debuting in WHIZ Comics #2 (Feb 1940).  Fawcett created a number of other heroes over the years, but none had the endurance of Captain Marvel and the "Marvel Family".  Their adventures dominated the comics at Fawcett, they would guest star in a number of other comics and even introduce new characters to the Fawcett fans.  There were certainly other publishers during the Golden Age, dozens, but the 3 spotlighted here created the most enduring super-hero characters.
-</p>
 
+      <div class="emoji closed active">😆</div>
+      <div class="emoji open">😃</div>
+      <h1>Justice League</h1>
+      <div id="info"></div>
+      <div id="circle">Batman</div>
+      <ol class="name-list">
+        <li>chocolate</li>
+        <li class="li">vanilla</li>
+        <li>berry</li>
+        <li>strawberry</li>
+      </ol>
+      <br>
+      <input class="list-input" type="text" />
 
-<div class="emoji closed active">😆</div>
-  <div class="emoji open">😃</div>
-
-  <h1>Justice League</h1>
-  <div id="info"></div>
-
-  <div id="circle">Batman</div>
-
-
-
-  <ol class="name-list">                
-    <li >chocolate</li>
-    <li class="li">vanilla</li>
-    <li>berry</li>
-    <li>strawberry</li>
-    </ol>
-    <br>
-    <input class="list-input" type="text"/>
-
-    <select onchange="myFunction(this);" size="24">
+      <select onchange="myFunction(this);" size="24">
         <option>armenian</option>
         <option>circle</option>
         <option>cjk-ideographic</option>
@@ -188,45 +138,19 @@ At ComicSpectrum we will also call out some key sub-divisions within ages (and s
 
       let x = 8.453;
       .innerHTML =
-        x.toFixed(0) + "<br>" +
-        x.toFixed(2) + "<br>" +
-        x.toFixed(4) + "<br>" +
-        x.toFixed(6);
+      x.toFixed(0) + "<br>" +
+      x.toFixed(2) + "<br>" +
+      x.toFixed(4) + "<br>" +
+      x.toFixed(6);
 
-        <p id="Dev Ed"></p>
+      <p id="Dev Ed"></p>
 
-</div>
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-<div id="app">
-</div>
-
-<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <title>title</title>
-  </head>
-  <body>
-    <div class="playerdiv">
-      <h1>player choice<h1>
-    <img class="rockpic" src = "https://www.dropbox.com/s/uwf43u6m2ok87kr/rockuse.png?raw=1">
-    <img class="paperpic" src = "https://www.dropbox.com/s/x94uwa8836i0loc/papruse.png?raw=1">
-    <img class="scispic" src = "https://www.dropbox.com/s/dg59e26xkfp5gjg/scisuse.png?raw=1">
     </div>
-        <div class="centermsg">
-          <p>make your selection</p>
-          <p class="usermsg-player"></p>
-          <p class="usermsg-comp"></p>
-          <p class="usermsg-result"></p>
-        </div>
-    <div class="compdiv">
-      <h1>computer choice<h1>
-    <img class="rockpic" src = "https://www.dropbox.com/s/uwf43u6m2ok87kr/rockuse.png?raw=1">
-    <img class="paperpic" src = "https://www.dropbox.com/s/x94uwa8836i0loc/papruse.png?raw=1">
-    <img class="scispic" src = "https://www.dropbox.com/s/dg59e26xkfp5gjg/scisuse.png?raw=1">
-    </div> 
 
-<h1 style="color:green;"> Button changes the title </h1>
-<button id="btn">Click Here</button>
+
+
+    <h1 style="color:green;"> Button changes the title </h1>
+    <button id="btn">Click Here</button>
 
 
 
@@ -234,28 +158,229 @@ At ComicSpectrum we will also call out some key sub-divisions within ages (and s
 
 
 
-<!--  Here is my comment. Is this right?  -->
+    <!--  Here is my comment. Is this right?  -->
 
-I think this is right? 
+    I think this is right?
+    <div class="div6">
+      <div id="borderDemo">
+        <p><strong>Comic Shop is the first book to trace the history of these cultural icons. Dan Gearino brings
+            us from their origins to the present-day, when the rise of digital platforms and a changing retail
+            landscape have the industry at a crossroads. When the book was first published in 2017, Gearino had
+            spent a year with stores around the country, following how they navigated the business. For this
+            updated and expanded paperback edition, he covers the wild retail landscape of 2017 and 2018, a time
+            that was brutal for stores and rich for comics as an art form.</strong> </p>
+      </div>
+    </div>
+    <div class="div7"><img src="shop.jpeg" alt="shop" width="90%" height="auto" />
+      <img src="comics.jpg" alt="comics" width="90%" height="auto" />
+    </div>
+  </div>
 
-<div class="div6"><div id="borderDemo"><p><strong>Comic Shop is the first book to trace the history of these cultural icons. Dan Gearino brings us from their origins to the present-day, when the rise of digital platforms and a changing retail landscape have the industry at a crossroads. When the book was first published in 2017, Gearino had spent a year with stores around the country, following how they navigated the business. For this updated and expanded paperback edition, he covers the wild retail landscape of 2017 and 2018, a time that was brutal for stores and rich for comics as an art form.</strong> </p></div> </div>
-<div class="div7"><img src="shop.jpeg" alt="shop" width="90%" height="auto" /> <img src="comics.jpg" alt="comics" width="90%" height="auto" /> </div>
-</div>
 
 
 
 
+  <!-- rock paper scissor  -->
+  <style>
+    .scissor_paper_rock {
+      background: lightblue;
+      width: 900px;
+      height: 500px;
+      display: block;
+      margin: auto;
+      position: relative;
+      margin-bottom: 100px;
+      margin-top: 100px;
+    }
+
+    .scissor_paper_rock .player {
+      position: absolute;
+      top: 0;
+      width: 300px;
+      background: rgba(155, 155, 155, .1);
+      height: 500px;
+      text-align: center;
+    }
+
+    .scissor_paper_rock .user {
+      left: 0px;
+    }
+
+    .scissor_paper_rock .center {
+      left: 300px;
+      background: rgb(21, 149, 192);
+      color: #fff;
+    }
+
+    .scissor_paper_rock .computer {
+      right: 0;
+    }
+
+    .scissor_paper_rock img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .scissor_paper_rock button {
+      margin: 10px auto;
+      padding: 20px;
+      outline: none;
+      background: #fff;
+      border: solid 1px black;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .rel {
+      text-align: center;
+      margin: 20px auto;
+      width: 90%;
+      background: #fff;
+      color: #000;
+      border: solid .25px rgba(155, 155, 155, .1);
+      padding: 20px;
+    }
+  </style>
+  <div class="scissor_paper_rock">
+    <div class="player user">
+      <h1 class="player_name">Player 1</h1>
+      <p>
+        <button onclick="play_rock_paper_scissor('Rock')">
+          <img src="assets/rock.png">
+        </button>
+      </p>
+      <p>
+        <button onclick="play_rock_paper_scissor('Paper')">
+          <img src="assets/paper.png">
+        </button>
+      </p>
+      <p>
+        <button onclick="play_rock_paper_scissor('Scissor')">
+          <img src="assets/scissor.png">
+        </button>
+      </p>
+    </div>
+    <div class="player center">
+      <h1 class="player_name">Results</h1>
+      <h3>Player 1</h3>
+      <div class="rel" id="player_1"></div>
+      <h3>Computer</h3>
+      <div class="rel" id="player_2"></div>
+      <h3>Outcome</h3>
+      <div class="rel" id="result"></div>
+    </div>
+
+    <div class="player computer">
+      <h1 class="player_name">Computer</h1>
+      <div id="prog"></div>
+      <p><button id="computer_1"><img src="assets/rock.png"></button></p>
+      <p><button id="computer_2"><img src="assets/paper.png"></button></p>
+      <p><button id="computer_3"><img src="assets/scissor.png"></button></p>
+    </div>
+  </div>
+  <script>
+    // play game js 
+    function play_rock_paper_scissor(user_piece) {
+      // computer thinking animatio 
+      document.getElementById('prog').innerHTML = '<progress></progress>';
+      // adjust new player 1 piece 
+      document.getElementById('player_1').innerHTML = user_piece;
+      // unset previous computer piece 
+      document.getElementById('player_2').innerHTML = '';
+      // delay a little to display results 1000 is 1 second 
+      setTimeout(() => {
+        // unset computer thinking animation 
+        document.getElementById('prog').innerHTML = '';
+        // pick a random piece for computer 
+        computer_piece = ['Rock', 'Paper', 'Scissor'][Math.floor(Math.random() * 3)];
+        // update current computer played piece 
+        document.getElementById('player_2').innerHTML = computer_piece;
+        // if the pieces are the same the is a draw 
+        if (computer_piece === user_piece) {
+          document.getElementById('result').innerHTML = 'Draw';
+        }
+
+        /* Game Play Logic
+            -rock beats scissors
+            -scissors beat paper
+            -Paper beats rock
+        */
+        
+        // if user picked Rock use this block 
+        else if (user_piece === "Rock") {
+          if (computer_piece == "Scissor") {
+            document.getElementById('result').innerHTML = 'Player 1 wins';
+          } else {
+            document.getElementById('result').innerHTML = 'Computer wins';
+          }
+        }
+        // if user picked Scissor use this block 
+        else if (user_piece === "Scissor") {
+          if (computer_piece == "Paper") {
+            document.getElementById('result').innerHTML = 'Player 1 wins';
+          } else {
+            document.getElementById('result').innerHTML = 'Computer wins';
+          }
+        }
+        // if user picked Paper use this block 
+        else {
+          if (computer_piece == "Rock") {
+            document.getElementById('result').innerHTML = 'Player 1 wins';
+          } else {
+            document.getElementById('result').innerHTML = 'Computer wins';
+          }
+        }
+
+
+      }, 1000);
+
+    }
+  </script>
 
 
 
+<!-- rock paper scissor  -->
 
-<footer>
-<p>© 2022 Bill Wilkson</p>
-  <p>Author: Bill Wilkson<br>
-<p>PO Box 1001 Falls Land ,VA 22041-1001<br>
-<p>Phone# 512-555-4545<br>
-  <a href="mailto:hege@example.com">hege@example.com</a></p>
-</footer>
-<script src="app.js"></script>
+
+
+  <footer>
+    <p>© 2022 Bill Wilkson</p>
+    <p>Author: Bill Wilkson<br>
+    <p>PO Box 1001 Falls Land ,VA 22041-1001<br>
+    <p>Phone# 512-555-4545<br>
+      <a href="mailto:hege@example.com">hege@example.com</a>
+    </p>
+  </footer>
+
+
+  <script>
+    function getWelcome() {
+      var ajaxRequest = new XMLHttpRequest();
+      ajaxRequest.onreadystatechange = function () {
+
+        if (ajaxRequest.readyState == 4) {
+          //the request is completed, now check its status
+          if (ajaxRequest.status == 200) {
+            document.getElementById("welcome").innerHTML = ajaxRequest.responseText;
+          }
+          else {
+            console.log("Status error: " + ajaxRequest.status);
+          }
+        }
+        else {
+          console.log("Ignored readyState: " + ajaxRequest.readyState);
+        }
+
+
+      }
+      ajaxRequest.open('GET', 'https://happycoding.io/tutorials/javascript/example-ajax-files/text-welcome.txt');
+      ajaxRequest.send();
+    }
+
+  </script>
+  <script src="app.js"></script>
 </body>
+
 </html>

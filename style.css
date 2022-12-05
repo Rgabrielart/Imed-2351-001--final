@@ -95,16 +95,20 @@ h1 {
 body {
   font-family: josefin sans, Verdana;
   text-align: center;
-  color:#565551;
+  color: #565551;
   width: 100%
 }
 
-.rockpic, .paperpic, .scispic {
+.rockpic,
+.paperpic,
+.scispic {
   width: 2.5em;
   opacity: 0.5;
 }
 
-.playerdiv .rockpic:hover, .playerdiv .paperpic:hover, .playerdiv .scispic:hover {
+.playerdiv .rockpic:hover,
+.playerdiv .paperpic:hover,
+.playerdiv .scispic:hover {
   opacity: 1;
 }
 
@@ -113,22 +117,138 @@ body {
 }
 
 .compdiv {
-  width:42%;
-  height:150px;
-  float:left;
+  width: 42%;
+  height: 150px;
+  float: left;
 }
 
 .playerdiv {
-  width:42%;
-  height:150px;
-  float:left;
+  width: 42%;
+  height: 150px;
+  float: left;
 }
 
 .centermsg {
   padding-top: 45px;
-  width:10%;
-  height:150px;
+  width: 10%;
+  height: 150px;
   float: left;
   font-size: 1em;
   font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* my style  */
+#demoFont {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: normal;
+  text-transform: none;
+}
+
+
+#demotext {
+  text-shadow: 9px 6px 5px #CECB19;
+}
+
+#borderDemo {
+  border: 5px dotted #1C6EA4;
+}
+
+.bolded {
+  font-weight: bold;
+}
+
+body {
+  background-color: #CCFFFF;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+ul#navlist li {
+  display: inline;
+}
+
+ul#navlist a {
+  margin-right: 20px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 11;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 8 / 4;
+}
+
+.div3 {
+  grid-area: 2 / 4 / 4 / 6;
+}
+
+.div4 {
+  grid-area: 2 / 6 / 7 / 9;
+}
+
+.div5 {
+  grid-area: 2 / 9 / 7 / 11;
+}
+
+.div6 {
+  grid-area: 7 / 4 / 8 / 11;
+}
+
+.div7 {
+  grid-area: 4 / 4 / 7 / 6;
+}
+
+.emphasis {
+  color: blue;
+  background-color: yellow;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  font-family: arial;
 }
